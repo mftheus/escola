@@ -5,8 +5,6 @@ public class AtividadeGlauco {
         
     String nome = JOptionPane.showInputDialog(null, "Qual o seu nome?", "ORACULO", 3);
     String input = JOptionPane.showInputDialog(null, nome + ", digite uma palavra", "ORACULO", 3);
-    char[] letras;
-    char[] vogais = {'a','e','i','o','u'};
     String palavra = input;
     
     JOptionPane.showMessageDialog(null, "Sua palavra tem: " + input.length() + " letras", "Informações da Palavra: " + input, 1);
@@ -45,10 +43,9 @@ public class AtividadeGlauco {
     JOptionPane.showMessageDialog(null, "Sequencia da quantidade de caracteres: " +sequenciaNumeros, "Informações da Palavra: " + input, 1);
     
     String palindromo = new StringBuilder(input).reverse().toString();
-    System.out.println(palindromo);
+
     String palindromoConfere = new StringBuilder(palindromo).reverse().toString();
-    System.out.println(palindromoConfere);
-    System.out.println(input);
+
     boolean palindromoTrue = palindromoConfere.equalsIgnoreCase(palindromo);
 
 
